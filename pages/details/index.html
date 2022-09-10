@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/icon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Buto Ijo - Home</title>
+  <title id="page-title"></title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FJR5J6VF5"></script>
@@ -17,25 +17,36 @@
 
     gtag('config', 'G-1FJR5J6VF5');
   </script>
-  <script type="module" crossorigin src="/assets/main.9306ff5b.js"></script>
+  <script type="module" crossorigin src="/assets/detail.14e256a2.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/data.bd97cc2d.js">
   <link rel="stylesheet" href="/assets/data.7ef13000.css">
 </head>
 
 <body>
   <div class="header">
+    <a class="home-icon" href="/">&lt;&nbsp;Kembali</a>
     <div class="search-bar">
       <h1>Buto Ijo</h1>
-      <input type="search" placeholder="Ketik judul film disini" id="input">
-      <button id="button">Cari</button>
+      <p>Download film lebih mudah cuy</p>
     </div>
   </div>
 
 
   <div class="content">
-    <div class="film" id="movie"></div>
-    <hr>
-    <div class="pagination" id="movie-pagination"></div>
+    <div class="tiles">
+      <div class="tile">
+        <img alt="film picture" id="image">
+        <div class="description">
+          <h3 id="title"></h3>
+          <p id="description"></p>
+        </div>
+      </div>
+      <div class="tile">
+        <p class="title">Download Links:</p>
+        <hr>
+        <div id="links"></div>
+      </div>
+    </div>
   </div>
 
   <div class="footer">
